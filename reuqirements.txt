@@ -1,0 +1,8 @@
+openai
+owlready2
+streamlit
+streamlit_option_menu
+tqdm
+pandas
+requests
+beautifulsoup4

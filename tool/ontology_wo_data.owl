@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/huutuongtu/ontologies/2024/3/untitled-ontology-15"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/huutuongtu/ontologies/2024/3/untitled-ontology-15">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Databases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Math"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algebra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optimization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Probality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Therapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreativeThinking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoveErotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPublisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </Declaration>
+
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExtension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberPage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPublishYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authorHasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publisherHasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#languageHasName"/>
+    </Declaration>
+
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Databases"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingSystem"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literature"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Children"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comic"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Math"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Algebra"/>
+        <Class IRI="#Math"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optimization"/>
+        <Class IRI="#Math"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Probality"/>
+        <Class IRI="#Math"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabetes"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacology"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Therapy"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychology"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreativeThinking"/>
+        <Class IRI="#Psychology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoveErotic"/>
+        <Class IRI="#Psychology"/>
+    </SubClassOf>
+
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </InverseObjectProperties>
+
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#Publisher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublisherOf"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublisherOf"/>
+        <Class IRI="#Publisher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyRange>
+
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDescription"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasID"/>
+        <Class IRI="#Book"/>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+        <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasExtension"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberPage"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPublishYear"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRate"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSize"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTags"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#authorHasName"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publisherHasName"/>
+        <Class IRI="#Publisher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#languageHasName"/>
+        <Class IRI="#Language"/>
+    </DataPropertyDomain>
+
+    <DataPropertyRange>
+        <DataProperty IRI="#hasID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasExtension"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberPage"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPublishYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTags"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#authorHasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publisherHasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#languageHasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
